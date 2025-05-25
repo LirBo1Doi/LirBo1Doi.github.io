@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Услуги ландшафтного дизайна в Белоярском — консультации, проекты, визуализация, благоустройство">
+  <title>Услуги - Ландшафтный дизайн в Белоярском</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="services.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="header">
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="services.html" class="active">Услуги</a>
+      <a href="specialists.html">Специалисты</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <select id="city-select">
+      <option>Белоярский</option>
+      <option>Екатеринбург</option>
+      <option>Тюмень</option>
+    </select>
+    <button class="btn-primary" onclick="window.location.href='specialists.html'">Найти специалиста</button>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <h1>Наши услуги</h1>
+      <p>Полный спектр услуг по ландшафтному дизайну и благоустройству</p>
+    </section>
+
+    <!-- Main Services -->
+    <section id="services" class="services service-category" data-scroll>
+      <h2>Основные услуги</h2>
+      <div class="services-grid">
+        <div class="card">
+          <i class="fas fa-comments"></i>
+          <h3>Консультация</h3>
+          <p>Профессиональная консультация по <strong>планированию участка</strong>, выбору растений и дизайнерских решений.</p>
+          <div class="price">от 2000 руб./час</div>
+          <button class="btn-primary" data-service="Консультация">Заказать консультацию</button>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-drafting-compass"></i>
+          <h3>Проектирование</h3>
+          <p>Разработка <strong>индивидуального проекта</strong> ландшафтного дизайна с учетом особенностей участка.</p>
+          <div class="price">от 1900 руб./сотка</div>
+          <button class="btn-primary" data-service="Проектирование">Заказать проект</button>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-cube"></i>
+          <h3>3D Визуализация</h3>
+          <p>Создание <strong>реалистичных 3D моделей</strong> будущего ландшафта для наглядного представления проекта.</p>
+          <div class="price">от 5000 руб.</div>
+          <button class="btn-primary" data-service="3D Визуализация">Заказать визуализацию</button>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-seedling"></i>
+          <h3>Озеленение</h3>
+          <p>Посадка растений, создание <strong>газонов и клумб</strong>, формирование зеленых зон на участке.</p>
+          <div class="price">от 800 руб./м²</div>
+          <button class="btn-primary" data-service="Озеленение">Заказать озеленение</button>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-water"></i>
+          <h3>Водные элементы</h3>
+          <p>Проектирование и установка <strong>фонтанов, прудов и водопадов</strong> для создания уникального ландшафта.</p>
+          <div class="price">от 15000 руб.</div>
+          <button class="btn-primary" data-service="Водные элементы">Заказать установку</button>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-hammer"></i>
+          <h3>Благоустройство</h3>
+          <p>Комплексное <strong>благоустройство территории</strong>, строительство дорожек, установка малых архитектурных форм.</p>
+          <div class="price">от 1200 руб./м²</div>
+          <button class="btn-primary" data-service="Благоустройство">Заказать благоустройство</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="service-category" data-scroll>
+      <h2>Детальное описание услуг</h2>
+      
+      <div class="service-detail" id="konsultatsiya">
+        <h3>Консультация по ландшафтному дизайну</h3>
+        <p>Наши эксперты помогут вам определиться с концепцией дизайна, подберут оптимальные решения для вашего участка и бюджета.</p>
+        <div class="price">2000-3500 руб./час</div>
+        <ul class="features">
+          <li>Анализ участка и почвы</li>
+          <li>Рекомендации по планировке</li>
+          <li>Подбор растений для климата</li>
+          <li>Консультация по стилю и бюджету</li>
+          <li>Ответы на все ваши вопросы</li>
+        </ul>
+        <button class="btn-primary" data-service="Консультация">Записаться на консультацию</button>
+      </div>
+
+      <div class="service-detail" id="proektirovanie">
+        <h3>Проектирование ландшафта</h3>
+        <p>Создаем детальный проект вашего участка с планом посадок, схемами освещения и инженерными решениями.</p>
+        <div class="price">1900-4000 руб./сотка</div>
+        <ul class="features">
+          <li>Генеральный план участка</li>
+          <li>Дендроплан (план посадок)</li>
+          <li>Схема освещения и полива</li>
+          <li>Планы дорожек и площадок</li>
+          <li>Спецификация материалов</li>
+          <li>Смета на выполнение работ</li>
+        </ul>
+        <button class="btn-primary" data-service="Проектирование">Заказать проект</button>
+      </div>
+
+      <div class="service-detail" id="ozelenenie">
+        <h3>Озеленение участка</h3>
+        <p>Профессиональная посадка растений с гарантией приживаемости и последующим уходом.</p>
+        <div class="price">800-2500 руб./м²</div>
+        <ul class="features">
+          <li>Подготовка почвы и грунта</li>
+          <li>Посадка деревьев и кустарников</li>
+          <li>Создание газонов и цветников</li>
+          <li>Установка системы полива</li>
+          <li>Гарантия на растения 1 год</li>
+          <li>Рекомендации по уходу</li>
+        </ul>
+        <button class="btn-primary" data-service="Озеленение">Заказать озеленение</button>
+      </div>
+
+      <div class="service-detail" id="vodnye-elementy">
+        <h3>Водные элементы</h3>
+        <p>Создаем уникальные водные объекты: от небольших фонтанчиков до больших декоративных прудов.</p>
+        <div class="price">15000-150000 руб.</div>
+        <ul class="features">
+          <li>Декоративные пруды</li>
+          <li>Фонтаны и водопады</li>
+          <li>Ручьи и каскады</li>
+          <li>Системы фильтрации воды</li>
+          <li>Подводное освещение</li>
+          <li>Гарантия на оборудование</li>
+        </ul>
+        <button class="btn-primary" data-service="Водные элементы">Заказать водный объект</button>
+      </div>
+    </section>
+
+    <!-- Process Steps -->
+    <section class="service-process" data-scroll>
+      <h2>Как мы работаем</h2>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h4>Консультация</h4>
+          <p>Встречаемся на участке, обсуждаем ваши пожелания и возможности</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h4>Обмеры</h4>
+          <p>Проводим топографическую съемку и анализ почвы</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h4>Проектирование</h4>
+          <p>Создаем детальный проект с визуализацией</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h4>Согласование</h4>
+          <p>Обсуждаем проект, вносим корректировки</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">5</div>
+          <h4>Реализация</h4>
+          <p>Выполняем все работы согласно проекту</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">6</div>
+          <h4>Сдача</h4>
+          <p>Сдаем готовый объект и даем рекомендации по уходу</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" data-scroll>
+      <h2>Часто задаваемые вопросы</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Сколько времени занимает создание проекта?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Создание проекта ландшафтного дизайна обычно занимает от 2 до 4 недель, в зависимости от сложности участка и объема работ. Включает обмеры, разработку концепции, детализацию и согласование с заказчиком.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Предоставляете ли вы гарантию на растения?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Да, мы предоставляем гарантию на приживаемость растений сроком 1 год при соблюдении рекомендаций по уходу. В случае гибели растения по не зависящим от вас причинам, мы бесплатно заменим его.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Можно ли реализовать проект поэтапно?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Конечно! Мы понимаем, что не всегда есть возможность реализовать весь проект сразу. Мы можем разделить работы на этапы и выполнять их по мере ваших возможностей, сохраняя общую концепцию дизайна.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Какие растения лучше всего подходят для нашего климата?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Для климата Белоярского идеально подходят хвойные растения (ели, сосны, можжевельники), морозостойкие лиственные деревья (березы, рябины, клены), а также местные кустарники и многолетние цветы. Мы подберем растения с учетом конкретных условий вашего участка.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Включает ли цена проекта авторский надзор?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Авторский надзор оплачивается отдельно и составляет 10-15% от стоимости работ. Это включает контроль качества выполнения работ, консультации по ходу реализации и внесение корректировок при необходимости.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" data-scroll>
+      <h2>Готовы создать ландшафт мечты?</h2>
+      <p>Свяжитесь с нами для бесплатной консультации. Мы поможем воплотить ваши идеи в жизнь!</p>
+      <button class="btn-primary" onclick="window.location.href='contacts.html'">Связаться с нами</button>
+      <button class="btn-primary" onclick="window.location.href='specialists.html'">Выбрать специалиста</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Контакты</h3>
+        <p><i class="fas fa-phone"></i> +7 (XXX) XXX-XX-XX</p>
+        <p><i class="fas fa-envelope"></i> info@landscape-design.ru</p>
+        <p><i class="fas fa-map-marker-alt"></i> г. Белоярский</p>
+      </div>
+      <div class="footer-section">
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="#konsultatsiya">Консультация</a></li>
+          <li><a href="#proektirovanie">Проектирование</a></li>
+          <li><a href="#ozelenenie">Озеленение</a></li>
+          <li><a href="#vodnye-elementy">Водные элементы</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>О нас</h3>
+        <ul>
+          <li><a href="specialists.html">Специалисты</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="index.html">Главная</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ландшафтный дизайн в Белоярском. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script>
+    // Excel file processing functionality
+    var gk_isXlsx = false;
+    var gk_xlsxFileLookup = {};
+    var gk_fileData = {};
+    
+    function filledCell(cell) {
+      return cell !== '' && cell != null;
+    }
+    
+    function loadFileData(filename) {
+      if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+        try {
+          var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+          var firstSheetName = workbook.SheetNames[0];
+          var worksheet = workbook.Sheets[firstSheetName];
+
+          var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+          var filteredData = jsonData.filter(row => row.some(filledCell));
+
+          var headerRowIndex = filteredData.findIndex((row, index) =>
+            row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+          );
+          
+          if (headerRowIndex === -1 || headerRowIndex > 25) {
+            headerRowIndex = 0;
+          }
+
+          var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex));
+          csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+          return csv;
+        } catch (e) {
+          console.error(e);
+          return "";
+        }
+      }
+      return gk_fileData[filename] || "";
+    }
+
+    // Main site functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Preloader
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        setTimeout(() => {
+          preloader.style.display = 'none';
+        }, 1000);
+      }
+
+      // City selection
+      const citySelect = document.getElementById('city-select');
+      if (citySelect) {
+        citySelect.addEventListener('change', function() {
+          const selectedCity = this.value;
+          console.log(`Выбран город: ${selectedCity}`);
+        });
+      }
+
+      // Service order buttons
+      const orderButtons = document.querySelectorAll('[data-service]');
+      orderButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const service = this.getAttribute('data-service');
+          alert(`Заказ услуги: ${service}. Скоро с вами свяжется наш специалист!`);
+        });
+      });
+
+      // FAQ functionality
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', function() {
+          const isActive = item.classList.contains('active');
+          
+          // Close all FAQ items
+          faqItems.forEach(faq => faq.classList.remove('active'));
+          
+          // Open clicked item if it wasn't active
+          if (!isActive) {
+            item.classList.add('active');
+          }
+        });
+      });
+
+      // Smooth scrolling for data-scroll elements
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('[data-scroll]').forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(30px)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+</html>

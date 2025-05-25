@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контакты ландшафтного дизайна в Белоярском — телефон, адрес, форма обратной связи">
+  <title>Контакты - Ландшафтный дизайн в Белоярском</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="services.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="header">
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="specialists.html">Специалисты</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="contacts.html" class="active">Контакты</a>
+    </nav>
+    <select id="city-select">
+      <option>Белоярский</option>
+      <option>Екатеринбург</option>
+      <option>Тюмень</option>
+    </select>
+    <button class="btn-primary" onclick="window.location.href='specialists.html'">Найти специалиста</button>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <h1>Контакты</h1>
+      <p>Свяжитесь с нами для консультации по ландшафтному дизайну</p>
+      <p id="city-message"></p>
+    </section>
+
+    <section id="contacts" class="contacts" data-scroll>
+      <h2>Наши контакты</h2>
+      <div class="contacts-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Телефон</h3>
+          <p><a href="tel:+79324098709">+7 (932) 409-87-09</a></p>
+          <small>Звоните с 9:00 до 20:00 ежедневно</small>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email</h3>
+          <p><a href="mailto:info@landscape-design.ru">info@landscape-design.ru</a></p>
+          <small>Ответим в течение 24 часов</small>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Адрес</h3>
+          <p>г. Белоярский, ул. Мира, д. 21</p>
+          <small>Офис работает: Пн-Пт 9:00-18:00</small>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Режим работы</h3>
+          <p>Понедельник - Пятница: 9:00 - 18:00</p>
+          <p>Суббота - Воскресенье: 10:00 - 16:00</p>
+          <small>Выезд на объект по договоренности</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-form" class="contact-form-section" data-scroll>
+      <h2>Свяжитесь с нами</h2>
+      <div class="form-container">
+        <div class="form-info">
+          <h3>Получите бесплатную консультацию</h3>
+          <p>Оставьте заявку и наш специалист свяжется с вами в течение часа для обсуждения вашего проекта.</p>
+          
+          <div class="info-benefits">
+            <div class="benefit-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Бесплатная консультация</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Выезд на участок</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Индивидуальный подход</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Гарантия на работы</span>
+            </div>
+          </div>
+        </div>
+
+        <form id="contact-form-main" class="contact-form">
+          <div class="form-group">
+            <label for="client-name">Ваше имя *</label>
+            <input type="text" id="client-name" name="client-name" placeholder="Введите ваше имя" required>
+          </div>
+
+          <div class="form-group">
+            <label for="client-phone">Телефон *</label>
+            <input type="tel" id="client-phone" name="client-phone" placeholder="+7 (___) ___-__-__" required>
+          </div>
+
+          <div class="form-group">
+            <label for="client-email">Email</label>
+            <input type="email" id="client-email" name="client-email" placeholder="example@email.ru">
+          </div>
+
+          <div class="form-group">
+            <label for="service-type">Интересующая услуга</label>
+            <select id="service-type" name="service-type">
+              <option value="">Выберите услугу</option>
+              <option value="konsultatsiya">Консультация</option>
+              <option value="proektirovanie">Проектирование</option>
+              <option value="ozelenenie">Озеленение</option>
+              <option value="vodnye-elementy">Водные элементы</option>
+              <option value="kompleksno">Комплексное благоустройство</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Предполагаемый бюджет</label>
+            <select id="budget" name="budget">
+              <option value="">Выберите бюджет</option>
+              <option value="do-50k">До 50 000 руб.</option>
+              <option value="50-100k">50 000 - 100 000 руб.</option>
+              <option value="100-300k">100 000 - 300 000 руб.</option>
+              <option value="300-500k">300 000 - 500 000 руб.</option>
+              <option value="500k+">Свыше 500 000 руб.</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="project-description">Описание проекта</label>
+            <textarea id="project-description" name="project-description" rows="5" placeholder="Расскажите о вашем участке, пожеланиях к дизайну, особых требованиях..."></textarea>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="privacy-consent" name="privacy-consent" required>
+              <span class="checkmark"></span>
+              Согласен на обработку персональных данных
+            </label>
+          </div>
+
+          <button type="submit" class="btn-primary">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="map-section" class="map-section" data-scroll>
+      <h2>Как нас найти</h2>
+      <div class="map-container">
+        <div class="map-placeholder">
+          <i class="fas fa-map-marked-alt"></i>
+          <p>Интерактивная карта</p>
+          <small>г. Белоярский, ул. Мира, д. 21</small>
+        </div>
+        <div class="map-directions">
+          <h3>Как добраться</h3>
+          <div class="directions-list">
+            <div class="direction-item">
+              <i class="fas fa-car"></i>
+              <div>
+                <strong>На автомобиле</strong>
+                <p>Парковка возле здания. Въезд с ул. Мира.</p>
+              </div>
+            </div>
+            <div class="direction-item">
+              <i class="fas fa-bus"></i>
+              <div>
+                <strong>Общественный транспорт</strong>
+                <p>Автобус №3, №7 до остановки "Центр"</p>
+              </div>
+            </div>
+            <div class="direction-item">
+              <i class="fas fa-walking"></i>
+              <div>
+                <strong>Пешком</strong>
+                <p>От центра города 5 минут пешком</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="working-areas" class="working-areas" data-scroll>
+      <h2>География работы</h2>
+      <div class="areas-grid">
+        <div class="area-card">
+          <h3>Белоярский</h3>
+          <p>Основной город работы. Выезд в любой район города.</p>
+          <div class="area-features">
+            <span class="feature">Бесплатный выезд</span>
+            <span class="feature">Гарантия 2 года</span>
+          </div>
+        </div>
+        <div class="area-card">
+          <h3>Екатеринбург</h3>
+          <p>Работаем в городе и пригородах. Выезд от 50 км.</p>
+          <div class="area-features">
+            <span class="feature">Выезд от 1500 руб.</span>
+            <span class="feature">Гарантия 1 год</span>
+          </div>
+        </div>
+        <div class="area-card">
+          <h3>Тюмень</h3>
+          <p>Крупные проекты от 300 000 руб. По договоренности.</p>
+          <div class="area-features">
+            <span class="feature">Индивидуальные условия</span>
+            <span class="feature">Полное сопровождение</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Контакты</h3>
+        <p><i class="fas fa-phone"></i> +7 (932) 409-87-09</p>
+        <p><i class="fas fa-envelope"></i> info@landscape-design.ru</p>
+        <p><i class="fas fa-map-marker-alt"></i> г. Белоярский</p>
+      </div>
+      <div class="footer-section">
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="services.html#konsultatsiya">Консультация</a></li>
+          <li><a href="services.html#proektirovanie">Проектирование</a></li>
+          <li><a href="services.html#ozelenenie">Озеленение</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>О нас</h3>
+        <ul>
+          <li><a href="specialists.html">Специалисты</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ландшафтный дизайн в Белоярском. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script>
+    // Preloader
+    window.addEventListener('load', function() {
+      const preloader = document.getElementById('preloader');
+      preloader.style.opacity = '0';
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 500);
+    });
+
+    // City selection
+    document.getElementById('city-select').addEventListener('change', function() {
+      const city = this.value;
+      const message = document.getElementById('city-message');
+      if (city !== 'Белоярский') {
+        message.textContent = `Также работаем в городе ${city}`;
+        message.style.display = 'block';
+      } else {
+        message.style.display = 'none';
+      }
+    });
+
+    // Phone mask
+    document.getElementById('client-phone').addEventListener('input', function() {
+      let value = this.value.replace(/\D/g, '');
+      if (value.length > 0) {
+        if (value[0] === '8') value = '7' + value.slice(1);
+        if (value[0] === '7') {
+          value = value.slice(0, 11);
+          this.value = '+7 (' + 
+            (value.slice(1, 4) || '') + 
+            (value.length > 4 ? ') ' + value.slice(4, 7) : '') +
+            (value.length > 7 ? '-' + value.slice(7, 9) : '') +
+            (value.length > 9 ? '-' + value.slice(9, 11) : '');
+        }
+      }
+    });
+
+    // Form submission
+    document.getElementById('contact-form-main').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Simulate form submission
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      
+      submitBtn.textContent = 'Отправляем...';
+      submitBtn.disabled = true;
+      
+      setTimeout(() => {
+        alert('Спасибо за заявку! Мы свяжемся с вами в ближайшее время.');
+        this.reset();
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }, 2000);
+    });
+
+    // Excel file processing functionality
+    var gk_isXlsx = false;
+    var gk_xlsxFileLookup = {};
+    var gk_fileData = {};
+    
+    function filledCell(cell) {
+      return cell !== '' && cell != null;
+    }
+    
+    function loadFileData(filename) {
+      if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+        try {
+          var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+          var firstSheetName = workbook.SheetNames[0];
+          var worksheet = workbook.Sheets[firstSheetName];
+
+          var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+          var filteredData = jsonData.filter(row => row.some(filledCell));
+
+          var headerRowIndex = filteredData.findIndex((row, index) =>
+            row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+          );
+          
+          if (headerRowIndex === -1 || headerRowIndex > 25) {
+            headerRowIndex = 0;
+          }
+
+          var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex));
+          csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+          return csv;
+        } catch (e) {
+          console.error(e);
+          return "";
+        }
+      }
+      return gk_fileData[filename] || "";
+    }
+  </script>
+</body>
+</html>

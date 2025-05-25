@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Опытные специалисты по ландшафтному дизайну в Белоярском — дизайнеры и садовники с многолетним опытом">
+  <title>Специалисты - Ландшафтный дизайн в Белоярском</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="services.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="header">
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="specialists.html" class="active">Специалисты</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <select id="city-select">
+      <option>Белоярский</option>
+      <option>Екатеринбург</option>
+      <option>Тюмень</option>
+    </select>
+    <button class="btn-primary" onclick="window.location.href='specialists.html'">Найти специалиста</button>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <h1>Наши специалисты</h1>
+      <p>Команда профессионалов с многолетним опытом в ландшафтном дизайне</p>
+      <p id="city-message"></p>
+    </section>
+
+    <section id="specialists-intro" class="specialists-intro" data-scroll>
+      <h2>Почему выбирают нас</h2>
+      <div class="intro-grid">
+        <div class="intro-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Высокая квалификация</h3>
+          <p>Все специалисты имеют профильное образование и сертификаты</p>
+        </div>
+        
+        <div class="intro-card">
+          <i class="fas fa-medal"></i>
+          <h3>Большой опыт</h3>
+          <p>Средний стаж работы наших дизайнеров — более 8 лет</p>
+        </div>
+        
+        <div class="intro-card">
+          <i class="fas fa-thumbs-up"></i>
+          <h3>Гарантия качества</h3>
+          <p>98% клиентов рекомендуют наших специалистов</p>
+        </div>
+        
+        <div class="intro-card">
+          <i class="fas fa-clock"></i>
+          <h3>Соблюдение сроков</h3>
+          <p>Всегда выполняем работы в установленные сроки</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="specialists-team" class="specialists-team" data-scroll>
+      <h2>Наша команда</h2>
+      <div class="specialists-grid">
+        
+        <div class="specialist-card">
+          <div class="specialist-photo">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="specialist-info">
+            <h3>Анна Петрова</h3>
+            <p class="specialist-role">Ведущий ландшафтный дизайнер</p>
+            <p class="specialist-experience">Опыт: 12 лет</p>
+            
+            <div class="specialist-skills">
+              <span class="skill-tag">Проектирование</span>
+              <span class="skill-tag">3D визуализация</span>
+              <span class="skill-tag">Озеленение</span>
+            </div>
+            
+            <div class="specialist-description">
+              <p>Анна — наш ведущий дизайнер с образованием в области ландшафтной архитектуры. Специализируется на создании комплексных проектов загородных участков.</p>
+            </div>
+            
+            <div class="specialist-achievements">
+              <h4>Достижения:</h4>
+              <ul>
+                <li>Более 200 реализованных проектов</li>
+                <li>Победитель конкурса "Лучший сад 2023"</li>
+                <li>Сертификат AutoCAD Landscape</li>
+              </ul>
+            </div>
+            
+            <div class="specialist-contact">
+              <button class="btn-primary" onclick="contactSpecialist('Anna')">Связаться</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="specialist-card">
+          <div class="specialist-photo">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="specialist-info">
+            <h3>Михаил Волков</h3>
+            <p class="specialist-role">Специалист по водным элементам</p>
+            <p class="specialist-experience">Опыт: 9 лет</p>
+            
+            <div class="specialist-skills">
+              <span class="skill-tag">Водопады</span>
+              <span class="skill-tag">Пруды</span>
+              <span class="skill-tag">Фонтаны</span>
+            </div>
+            
+            <div class="specialist-description">
+              <p>Михаил — эксперт по созданию водных элементов. Умеет превратить любой участок в оазис с прудами, водопадами и фонтанами.</p>
+            </div>
+            
+            <div class="specialist-achievements">
+              <h4>Достижения:</h4>
+              <ul>
+                <li>Установил более 150 водных объектов</li>
+                <li>Специализация: декоративные пруды</li>
+                <li>Сертификат по гидротехнике</li>
+              </ul>
+            </div>
+            
+            <div class="specialist-contact">
+              <button class="btn-primary" onclick="contactSpecialist('Mikhail')">Связаться</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="specialist-card">
+          <div class="specialist-photo">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="specialist-info">
+            <h3>Елена Сидорова</h3>
+            <p class="specialist-role">Специалист по озеленению</p>
+            <p class="specialist-experience">Опыт: 7 лет</p>
+            
+            <div class="specialist-skills">
+              <span class="skill-tag">Посадка растений</span>
+              <span class="skill-tag">Газоны</span>
+              <span class="skill-tag">Цветники</span>
+            </div>
+            
+            <div class="specialist-description">
+              <p>Елена знает всё о растениях, подходящих для климата Белоярского. Создает красивые и устойчивые композиции.</p>
+            </div>
+            
+            <div class="specialist-achievements">
+              <h4>Достижения:</h4>
+              <ul>
+                <li>Агроном-селекционер по образованию</li>
+                <li>Создала более 100 цветников</li>
+                <li>Эксперт по северным растениям</li>
+              </ul>
+            </div>
+            
+            <div class="specialist-contact">
+              <button class="btn-primary" onclick="contactSpecialist('Elena')">Связаться</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="specialist-card">
+          <div class="specialist-photo">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="specialist-info">
+            <h3>Дмитрий Козлов</h3>
+            <p class="specialist-role">Дизайнер малых форм</p>
+            <p class="specialist-experience">Опыт: 6 лет</p>
+            
+            <div class="specialist-skills">
+              <span class="skill-tag">Беседки</span>
+              <span class="skill-tag">Дорожки</span>
+              <span class="skill-tag">Освещение</span>
+            </div>
+            
+            <div class="specialist-description">
+              <p>Дмитрий специализируется на создании функциональных элементов: беседок, дорожек, систем освещения и малых архитектурных форм.</p>
+            </div>
+            
+            <div class="specialist-achievements">
+              <h4>Достижения:</h4>
+              <ul>
+                <li>Инженер-строитель по образованию</li>
+                <li>Более 80 построенных беседок</li>
+                <li>Сертификат по ландшафтному освещению</li>
+              </ul>
+            </div>
+            
+            <div class="specialist-contact">
+              <button class="btn-primary" onclick="contactSpecialist('Dmitry')">Связаться</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="specialist-card">
+          <div class="specialist-photo">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="specialist-info">
+            <h3>Ольга Морозова</h3>
+            <p class="specialist-role">Консультант и менеджер</p>
+            <p class="specialist-experience">Опыт: 5 лет</p>
+            
+            <div class="specialist-skills">
+              <span class="skill-tag">Консультации</span>
+              <span class="skill-tag">Планирование</span>
+              <span class="skill-tag">Сметы</span>
+            </div>
+            
+            <div class="specialist-description">
+              <p>Ольга поможет вам выбрать оптимальное решение для участка, составит смету и проконтролирует выполнение всех работ.</p>
+            </div>
+            
+            <div class="specialist-achievements">
+              <h4>Достижения:</h4>
+              <ul>
+                <li>Экономист по образованию</li>
+                <li>Провела более 500 консультаций</li>
+                <li>Специалист по бюджетированию</li>
+              </ul>
+            </div>
+            
+            <div class="specialist-contact">
+              <button class="btn-primary" onclick="contactSpecialist('Olga')">Связаться</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="specialist-card">
+          <div class="specialist-photo">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="specialist-info">
+            <h3>Алексей Новиков</h3>
+            <p class="specialist-role">Мастер по уходу за садом</p>
+            <p class="specialist-experience">Опыт: 10 лет</p>
+            
+            <div class="specialist-skills">
+              <span class="skill-tag">Обрезка</span>
+              <span class="skill-tag">Полив</span>
+              <span class="skill-tag">Удобрения</span>
+            </div>
+            
+            <div class="specialist-description">
+              <p>Алексей — садовник с золотыми руками. Знает, как правильно ухаживать за растениями круглый год и поддерживать сад в идеальном состоянии.</p>
+            </div>
+            
+            <div class="specialist-achievements">
+              <h4>Достижения:</h4>
+              <ul>
+                <li>Садовод с 10-летним стажем</li>
+                <li>Обслуживает более 50 участков</li>
+                <li>Эксперт по борьбе с вредителями</li>
+              </ul>
+            </div>
+            
+            <div class="specialist-contact">
+              <button class="btn-primary" onclick="contactSpecialist('Alexey')">Связаться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-we-work" class="how-we-work" data-scroll>
+      <h2>Как мы работаем</h2>
+      <div class="work-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Первичная консультация</h3>
+            <p>Выезд специалиста на участок для оценки и обсуждения ваших пожеланий</p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Создание проекта</h3>
+            <p>Наши дизайнеры разрабатывают индивидуальный проект с 3D визуализацией</p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Согласование и корректировки</h3>
+            <p>Вносим изменения в проект до полного соответствия вашим требованиям</p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Реализация проекта</h3>
+            <p>Наша команда воплощает проект в жизнь с соблюдением всех сроков</p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>Сдача объекта</h3>
+            <p>Принимаем работу, даем рекомендации по уходу и предоставляем гарантию</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="consultation-form" class="consultation-form" data-scroll>
+      <h2>Получить консультацию специалиста</h2>
+      <div class="consultation-container">
+        <div class="consultation-info">
+          <h3>Бесплатная консультация</h3>
+          <p>Наш специалист приедет к вам, оценит участок и даст профессиональные рекомендации.</p>
+          
+          <div class="consultation-benefits">
+            <div class="benefit">
+              <i class="fas fa-check"></i>
+              <span>Выезд в удобное время</span>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-check"></i>
+              <span>Анализ почвы и особенностей участка</span>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-check"></i>
+              <span>Предварительная смета</span>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-check"></i>
+              <span>Рекомендации по растениям</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="consultation-form-main">
+          <div class="form-group">
+            <label for="client-name">Ваше имя *</label>
+            <input type="text" id="client-name" name="client-name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="client-phone">Телефон *</label>
+            <input type="tel" id="client-phone" name="client-phone" placeholder="+7 (XXX) XXX-XX-XX" required>
+          </div>
+
+          <div class="form-group">
+            <label for="specialist-type">Нужен специалист по:</label>
+            <select id="specialist-type" name="specialist-type">
+              <option value="">Выберите направление</option>
+              <option value="design">Ландшафтному дизайну</option>
+              <option value="water">Водным элементам</option>
+              <option value="plants">Озеленению</option>
+              <option value="construction">Малым формам</option>
+              <option value="maintenance">Уходу за садом</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="visit-time">Удобное время для визита</label>
+            <select id="visit-time" name="visit-time">
+              <option value="">Выберите время</option>
+              <option value="morning">Утром (9:00-12:00)</option>
+              <option value="afternoon">Днем (12:00-16:00)</option>
+              <option value="evening">Вечером (16:00-19:00)</option>
+              <option value="weekend">В выходные</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="project-details">Краткое описание задачи</label>
+            <textarea id="project-details" name="project-details" rows="3" placeholder="Опишите что хотели бы сделать на участке..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Заказать консультацию</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Контакты</h3>
+        <p><i class="fas fa-phone"></i> +7 (XXX) XXX-XX-XX</p>
+        <p><i class="fas fa-envelope"></i> info@landscape-design.ru</p>
+        <p><i class="fas fa-map-marker-alt"></i> г. Белоярский</p>
+      </div>
+      <div class="footer-section">
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="services.html#konsultatsiya">Консультация</a></li>
+          <li><a href="services.html#proektirovanie">Проектирование</a></li>
+          <li><a href="services.html#ozelenenie">Озеленение</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>О нас</h3>
+        <ul>
+          <li><a href="specialists.html">Специалисты</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ландшафтный дизайн в Белоярском. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script>
+    // Preloader
+    window.addEventListener('load', function() {
+      const preloader = document.getElementById('preloader');
+      preloader.style.opacity = '0';
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 500);
+    });
+
+    // City selection
+    document.getElementById('city-select').addEventListener('change', function() {
+      const city = this.value;
+      const message = document.getElementById('city-message');
+      if (city !== 'Белоярский') {
+        message.textContent = `Также работаем в городе ${city}`;
+        message.style.display = 'block';
+      } else {
+        message.style.display = 'none';
+      }
+    });
+
+    // Contact specialist function
+    function contactSpecialist(name) {
+      alert(`Вы хотите связаться со специалистом ${name}. Заполните форму ниже или позвоните нам!`);
+      document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Phone number formatting
+    document.getElementById('client-phone').addEventListener('input', function(e) {
+      let value = e.target.value.replace(/\D/g, '');
+      if (value.length > 0) {
+        if (value[0] === '8') value = '7' + value.slice(1);
+        if (value[0] === '7') {
+          value = value.replace(/^7(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/, function(match, p1, p2, p3, p4) {
+            let result = '+7';
+            if (p1) result += ' (' + p1;
+            if (p2) result += ') ' + p2;
+            if (p3) result += '-' + p3;
+            if (p4) result += '-' + p4;
+            return result;
+          });
+        }
+      }
+      e.target.value = value;
+    });
+
+    // Consultation form submission
+    document.querySelector('.consultation-form-main').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('client-name').value.trim();
+      const phone = document.getElementById('client-phone').value.trim();
+      
+      if (!name || !phone) {
+        alert('Пожалуйста, заполните обязательные поля (имя и телефон).');
+        return;
+      }
+      
+      alert('Спасибо за заявку! Наш специалист свяжется с вами в ближайшее время для согласования времени визита.');
+      this.reset();
+    });
+
+    // Excel file processing functionality
+    var gk_isXlsx = false;
+    var gk_xlsxFileLookup = {};
+    var gk_fileData = {};
+    
+    function filledCell(cell) {
+      return cell !== '' && cell != null;
+    }
+    
+    function loadFileData(filename) {
+      if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+        try {
+          var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+          var firstSheetName = workbook.SheetNames[0];
+          var worksheet = workbook.Sheets[firstSheetName];
+
+          // Convert sheet to JSON to filter blank rows
+          var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+          // Filter out blank rows (rows where all cells are empty, null, or undefined)
+          var filteredData = jsonData.filter(row => row.some(filledCell));
+
+          // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+          var headerRowIndex = filteredData.findIndex((row, index) =>
+            row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+          );
+          // Fallback
+          if (headerRowIndex === -1 || headerRowIndex > 25) {
+            headerRowIndex = 0;
+          }
+
+          // Convert filtered JSON back to CSV
+          var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+          csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+          return csv;
+        } catch (e) {
+          console.error(e);
+          return "";
+        }
+      }
+      return gk_fileData[filename] || "";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Отзывы клиентов о ландшафтном дизайне в Белоярском — реальные мнения о наших услугах">
+  <title>Отзывы - Ландшафтный дизайн в Белоярском</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="services.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="header">
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="specialists.html">Специалисты</a>
+      <a href="reviews.html" class="active">Отзывы</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <select id="city-select">
+      <option>Белоярский</option>
+      <option>Екатеринбург</option>
+      <option>Тюмень</option>
+    </select>
+    <button class="btn-primary" onclick="window.location.href='specialists.html'">Найти специалиста</button>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <h1>Отзывы наших клиентов</h1>
+      <p>Узнайте, что говорят о нас довольные заказчики</p>
+      <p id="city-message"></p>
+    </section>
+
+    <section id="reviews" class="reviews" data-scroll>
+      <h2>Реальные отзывы</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <h3>Анна Петрова</h3>
+              <p class="review-date">15 марта 2024</p>
+            </div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Прекрасная работа! Ландшафтные дизайнеры создали удивительный сад на нашем участке. Проект превзошел все ожидания, учтены все наши пожелания. Особенно понравилось озеленение и водные элементы."</p>
+          </div>
+          <div class="review-project">
+            <small>Проект: Загородная усадьба</small>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <h3>Михаил Сидоров</h3>
+              <p class="review-date">28 февраля 2024</p>
+            </div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Отличная консультация! Специалист приехал точно в срок, дал множество полезных советов по благоустройству участка. Цена соответствует качеству. Обязательно закажем проектирование!"</p>
+          </div>
+          <div class="review-project">
+            <small>Услуга: Консультация</small>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <h3>Елена Козлова</h3>
+              <p class="review-date">10 февраля 2024</p>
+            </div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Хорошая работа по озеленению небольшого участка. Растения подобрали качественно, все прижилось. Единственное замечание - хотелось бы больше вариантов дизайна, но в целом результатом довольны."</p>
+          </div>
+          <div class="review-project">
+            <small>Проект: Городской дворик</small>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <h3>Дмитрий Волков</h3>
+              <p class="review-date">25 января 2024</p>
+            </div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Водопад и пруд получились просто волшебными! Команда профессионалов сделала все быстро и качественно. Теперь у нас самый красивый участок в округе. Спасибо за отличную работу!"</p>
+          </div>
+          <div class="review-project">
+            <small>Проект: Сад у озера</small>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <h3>Ольга Морозова</h3>
+              <p class="review-date">12 января 2024</p>
+            </div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Полное проектирование и благоустройство участка выполнено на высшем уровне! От первой консультации до финального результата - все прошло гладко. Рекомендую всем друзьям и знакомым."</p>
+          </div>
+          <div class="review-project">
+            <small>Услуга: Проектирование</small>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <h3>Алексей Новиков</h3>
+              <p class="review-date">30 декабря 2023</p>
+            </div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Качественное озеленение территории. Все растения подобраны с учетом климата Белоярского. Работы выполнены в срок. Цена чуть выше ожидаемой, но результат того стоит."</p>
+          </div>
+          <div class="review-project">
+            <small>Услуга: Озеленение</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="review-stats" class="review-stats" data-scroll>
+      <h2>Статистика отзывов</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">4.8</div>
+          <div class="stat-label">Средняя оценка</div>
+          <div class="stat-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">127</div>
+          <div class="stat-label">Довольных клиентов</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Рекомендуют нас</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15</div>
+          <div class="stat-label">Лет опыта</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leave-review" class="leave-review" data-scroll>
+      <h2>Оставить отзыв</h2>
+      <div class="review-form-container">
+        <form class="review-form">
+          <div class="form-group">
+            <label for="reviewer-name">Ваше имя</label>
+            <input type="text" id="reviewer-name" name="reviewer-name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="reviewer-email">Email</label>
+            <input type="email" id="reviewer-email" name="reviewer-email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="project-type">Услуга/проект</label>
+            <select id="project-type" name="project-type">
+              <option value="">Выберите услугу</option>
+              <option value="konsultatsiya">Консультация</option>
+              <option value="proektirovanie">Проектирование</option>
+              <option value="ozelenenie">Озеленение</option>
+              <option value="vodnye-elementy">Водные элементы</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="rating">Оценка</label>
+            <div class="rating-input">
+              <input type="radio" id="star5" name="rating" value="5">
+              <label for="star5"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1"><i class="fas fa-star"></i></label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="review-text">Ваш отзыв</label>
+            <textarea id="review-text" name="review-text" rows="5" placeholder="Расскажите о вашем опыте работы с нами..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn-primary">Отправить отзыв</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Контакты</h3>
+        <p><i class="fas fa-phone"></i> +7 (XXX) XXX-XX-XX</p>
+        <p><i class="fas fa-envelope"></i> info@landscape-design.ru</p>
+        <p><i class="fas fa-map-marker-alt"></i> г. Белоярский</p>
+      </div>
+      <div class="footer-section">
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="services.html#konsultatsiya">Консультация</a></li>
+          <li><a href="services.html#proektirovanie">Проектирование</a></li>
+          <li><a href="services.html#ozelenenie">Озеленение</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>О нас</h3>
+        <ul>
+          <li><a href="specialists.html">Специалисты</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ландшафтный дизайн в Белоярском. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script>
+    // Preloader
+    window.addEventListener('load', function() {
+      const preloader = document.getElementById('preloader');
+      preloader.style.opacity = '0';
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 500);
+    });
+
+    // City selection
+    document.getElementById('city-select').addEventListener('change', function() {
+      const city = this.value;
+      const message = document.getElementById('city-message');
+      if (city !== 'Белоярский') {
+        message.textContent = `Также работаем в городе ${city}`;
+        message.style.display = 'block';
+      } else {
+        message.style.display = 'none';
+      }
+    });
+
+    // Review form rating
+    const ratingInputs = document.querySelectorAll('.rating-input input[type="radio"]');
+    const ratingLabels = document.querySelectorAll('.rating-input label');
+
+    ratingInputs.forEach((input, index) => {
+      input.addEventListener('change', function() {
+        ratingLabels.forEach((label, labelIndex) => {
+          if (labelIndex >= (5 - parseInt(this.value))) {
+            label.classList.add('active');
+          } else {
+            label.classList.remove('active');
+          }
+        });
+      });
+    });
+
+    // Review form submission
+    document.querySelector('.review-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Спасибо за ваш отзыв! Мы рассмотрим его в ближайшее время.');
+      this.reset();
+      ratingLabels.forEach(label => label.classList.remove('active'));
+    });
+
+    // Excel file processing functionality
+    var gk_isXlsx = false;
+    var gk_xlsxFileLookup = {};
+    var gk_fileData = {};
+    
+    function filledCell(cell) {
+      return cell !== '' && cell != null;
+    }
+    
+    function loadFileData(filename) {
+      if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+        try {
+          var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+          var firstSheetName = workbook.SheetNames[0];
+          var worksheet = workbook.Sheets[firstSheetName];
+
+          // Convert sheet to JSON to filter blank rows
+          var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+          // Filter out blank rows (rows where all cells are empty, null, or undefined)
+          var filteredData = jsonData.filter(row => row.some(filledCell));
+
+          // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+          var headerRowIndex = filteredData.findIndex((row, index) =>
+            row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+          );
+          // Fallback
+          if (headerRowIndex === -1 || headerRowIndex > 25) {
+            headerRowIndex = 0;
+          }
+
+          // Convert filtered JSON back to CSV
+          var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+          csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+          return csv;
+        } catch (e) {
+          console.error(e);
+          return "";
+        }
+      }
+      return gk_fileData[filename] || "";
+    }
+  </script>
+</body>
+</html>

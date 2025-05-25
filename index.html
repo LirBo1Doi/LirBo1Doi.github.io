@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ландшафтный дизайн в Белоярском — профессиональные услуги по проектированию и благоустройству участков">
+  <title>Ландшафтный дизайн в Белоярском</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="services.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="header">
+    <nav>
+      <a href="index.html" class="active">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="specialists.html">Специалисты</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <select id="city-select">
+      <option>Белоярский</option>
+      <option>Екатеринбург</option>
+      <option>Тюмень</option>
+    </select>
+    <button class="btn-primary" onclick="window.location.href='specialists.html'">Найти специалиста</button>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <h1>Ландшафтный дизайн в Белоярском</h1>
+      <p>Создаем уникальные ландшафты для вашего участка</p>
+      <p id="city-message"></p>
+    </section>
+
+    <section id="services" class="services" data-scroll>
+      <h2>Наши услуги</h2>
+      <div class="services-grid">
+        <div class="card">
+          <i class="fas fa-comments"></i>
+          <h3>Консультация</h3>
+          <p>Получите профессиональные советы от экспертов по ландшафтному дизайну.</p>
+          <a href="services.html#konsultatsiya" class="btn-primary">Подробнее</a>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-drafting-compass"></i>
+          <h3>Проектирование</h3>
+          <p>Разработка индивидуального проекта ландшафтного дизайна.</p>
+          <a href="services.html#proektirovanie" class="btn-primary">Подробнее</a>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-seedling"></i>
+          <h3>Озеленение</h3>
+          <p>Посадка растений и создание зеленых зон на участке.</p>
+          <a href="services.html#ozelenenie" class="btn-primary">Подробнее</a>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-water"></i>
+          <h3>Водные элементы</h3>
+          <p>Проектирование и установка фонтанов, прудов и водопадов.</p>
+          <a href="services.html#vodnye-elementy" class="btn-primary">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio" data-scroll>
+      <h2>Наши проекты</h2>
+      <div class="portfolio-grid">
+        <div class="project-item">
+          <div class="project-image">
+            <i class="fas fa-image"></i>
+          </div>
+          <h3>Сад у озера</h3>
+          <p>Красивый сад с водными элементами и естественным ландшафтом.</p>
+          <a href="project-sad-u-ozera.html" class="btn-primary">Подробнее</a>
+        </div>
+        
+        <div class="project-item">
+          <div class="project-image">
+            <i class="fas fa-image"></i>
+          </div>
+          <h3>Городской дворик</h3>
+          <p>Современный дизайн для небольшого городского участка.</p>
+          <a href="project-gorodskoy-dvorik.html" class="btn-primary">Подробнее</a>
+        </div>
+        
+        <div class="project-item">
+          <div class="project-image">
+            <i class="fas fa-image"></i>
+          </div>
+          <h3>Загородная усадьба</h3>
+          <p>Комплексное благоустройство большого загородного участка.</p>
+          <a href="project-zagorodnaya-usadba.html" class="btn-primary">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing" data-scroll>
+      <h2>Цены на услуги</h2>
+      <div class="pricing-grid">
+        <div class="price-item">
+          <h3>Ландшафтный дизайн</h3>
+          <div class="price">от 1900 руб./сотка</div>
+          <button class="btn-primary" data-service="Ландшафтный дизайн">Заказать</button>
+        </div>
+        
+        <div class="price-item">
+          <h3>Консультация</h3>
+          <div class="price">от 2000 руб./час</div>
+          <button class="btn-primary" data-service="Консультация">Заказать</button>
+        </div>
+        
+        <div class="price-item">
+          <h3>Озеленение</h3>
+          <div class="price">от 800 руб./м²</div>
+          <button class="btn-primary" data-service="Озеленение">Заказать</button>
+        </div>
+        
+        <div class="price-item">
+          <h3>Водные элементы</h3>
+          <div class="price">от 15000 руб.</div>
+          <button class="btn-primary" data-service="Водные элементы">Заказать</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Контакты</h3>
+        <p><i class="fas fa-phone"></i> +7 (XXX) XXX-XX-XX</p>
+        <p><i class="fas fa-envelope"></i> info@landscape-design.ru</p>
+        <p><i class="fas fa-map-marker-alt"></i> г. Белоярский</p>
+      </div>
+      <div class="footer-section">
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="services.html#konsultatsiya">Консультация</a></li>
+          <li><a href="services.html#proektirovanie">Проектирование</a></li>
+          <li><a href="services.html#ozelenenie">Озеленение</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>О нас</h3>
+        <ul>
+          <li><a href="specialists.html">Специалисты</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ландшафтный дизайн в Белоярском. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script>
+    // Excel file processing functionality
+    var gk_isXlsx = false;
+    var gk_xlsxFileLookup = {};
+    var gk_fileData = {};
+    
+    function filledCell(cell) {
+      return cell !== '' && cell != null;
+    }
+    
+    function loadFileData(filename) {
+      if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+        try {
+          var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+          var firstSheetName = workbook.SheetNames[0];
+          var worksheet = workbook.Sheets[firstSheetName];
+
+          // Convert sheet to JSON to filter blank rows
+          var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+          // Filter out blank rows
+          var filteredData = jsonData.filter(row => row.some(filledCell));
+
+          // Find header row
+          var headerRowIndex = filteredData.findIndex((row, index) =>
+            row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+          );
+          
+          // Fallback
+          if (headerRowIndex === -1 || headerRowIndex > 25) {
+            headerRowIndex = 0;
+          }
+
+          // Convert filtered JSON back to CSV
+          var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex));
+          csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+          return csv;
+        } catch (e) {
+          console.error(e);
+          return "";
+        }
+      }
+      return gk_fileData[filename] || "";
+    }
+
+    // Main site functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Preloader
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        setTimeout(() => {
+          preloader.style.display = 'none';
+        }, 1000);
+      }
+
+      // City selection
+      const citySelect = document.getElementById('city-select');
+      const cityMessage = document.getElementById('city-message');
+      
+      if (citySelect && cityMessage) {
+        citySelect.addEventListener('change', function() {
+          const selectedCity = this.value;
+          cityMessage.textContent = `Выбран город: ${selectedCity}`;
+        });
+      }
+
+      // Service order buttons
+      const orderButtons = document.querySelectorAll('[data-service]');
+      orderButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const service = this.getAttribute('data-service');
+          alert(`Заказ услуги: ${service}. Скоро с вами свяжется наш специалист!`);
+        });
+      });
+
+      // Smooth scrolling for data-scroll elements
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      // Observe all sections with data-scroll
+      document.querySelectorAll('[data-scroll]').forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(30px)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+</html>

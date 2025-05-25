@@ -1,0 +1,350 @@
+/* Services Page Specific Styles */
+
+/* Enhanced Service Cards */
+.services .card {
+  position: relative;
+  overflow: hidden;
+  background: var(--ui-bg-card);
+  border: 1px solid transparent;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(46, 181, 24, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.services .card:hover::before {
+  left: 100%;
+}
+
+.services .card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(46, 181, 24, 0.2);
+  border-color: var(--ui-color-success);
+  background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+}
+
+/* Service Icons Enhancement */
+.services .card i {
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.services .card:hover i {
+  transform: scale(1.1) rotate(5deg);
+  color: var(--ui-color-success-hover);
+  text-shadow: 0 0 20px rgba(46, 181, 24, 0.5);
+}
+
+/* Service Text Enhancements */
+.services .card h3 {
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.services .card:hover h3 {
+  color: #ffffff;
+}
+
+.services .card p {
+  margin: 15px 0;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.services .card:hover p {
+  color: var(--ui-color-text);
+}
+
+.services .card strong {
+  color: var(--ui-color-success);
+  font-weight: 600;
+}
+
+/* Service Button Enhancements */
+.services .card .btn-primary {
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.services .card .btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.services .card:hover .btn-primary::before {
+  left: 100%;
+}
+
+/* Service Categories */
+.service-category {
+  margin-bottom: 3rem;
+}
+
+.service-category h2 {
+  color: var(--ui-color-success);
+  border-bottom: 2px solid var(--ui-color-success);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+/* Service Detail Cards */
+.service-detail {
+  background: var(--ui-bg-card);
+  padding: 2rem;
+  border-radius: var(--ui-border-radius);
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--ui-color-success);
+  transition: var(--ui-transition);
+}
+
+.service-detail:hover {
+  transform: translateX(10px);
+  box-shadow: var(--ui-shadow-hover);
+}
+
+.service-detail h3 {
+  color: var(--ui-color-success);
+  margin-bottom: 1rem;
+}
+
+.service-detail .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--ui-color-success);
+  margin: 1rem 0;
+}
+
+.service-detail .features {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.service-detail .features li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.service-detail .features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--ui-color-success);
+  font-weight: bold;
+}
+
+/* Service Process Steps */
+.service-process {
+  background: var(--ui-bg-secondary);
+  padding: 3rem 2rem;
+  border-radius: var(--ui-border-radius);
+  margin: 3rem 0;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.process-step {
+  text-align: center;
+  position: relative;
+}
+
+.process-step::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -1rem;
+  width: 2rem;
+  height: 2px;
+  background: var(--ui-color-success);
+  transform: translateY(-50%);
+}
+
+.process-step:last-child::after {
+  display: none;
+}
+
+.process-step .step-number {
+  width: 50px;
+  height: 50px;
+  background: var(--ui-color-success);
+  color: #242424;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 1rem;
+}
+
+.process-step h4 {
+  color: var(--ui-color-success);
+  margin-bottom: 0.5rem;
+}
+
+/* FAQ Section */
+.faq-section {
+  margin: 3rem 0;
+}
+
+.faq-item {
+  background: var(--ui-bg-card);
+  margin-bottom: 1rem;
+  border-radius: var(--ui-border-radius);
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 1.5rem;
+  background: var(--ui-bg-secondary);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--ui-transition);
+}
+
+.faq-question:hover {
+  background: var(--ui-color-success);
+  color: #242424;
+}
+
+.faq-answer {
+  padding: 0 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding: 1.5rem;
+}
+
+.faq-toggle {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+/* Call to Action */
+.cta-section {
+  background: linear-gradient(135deg, var(--ui-color-success), var(--ui-color-success-hover));
+  color: #242424;
+  padding: 3rem 2rem;
+  border-radius: var(--ui-border-radius);
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.cta-section h2 {
+  color: #242424;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-section .btn-primary {
+  background: #242424;
+  color: var(--ui-color-success);
+}
+
+.cta-section .btn-primary:hover {
+  background: #333333;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .process-steps {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .process-step::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .services .card {
+    padding: 1.5rem;
+  }
+  
+  .services .card:hover {
+    transform: translateY(-5px) scale(1.01);
+  }
+  
+  .service-detail {
+    padding: 1.5rem;
+  }
+  
+  .service-detail:hover {
+    transform: translateX(5px);
+  }
+  
+  .service-process {
+    padding: 2rem 1rem;
+  }
+  
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services .card {
+    padding: 1rem;
+  }
+  
+  .services .card i {
+    font-size: 2.5rem;
+  }
+  
+  .service-detail {
+    padding: 1rem;
+  }
+  
+  .faq-question {
+    padding: 1rem;
+  }
+  
+  .service-process {
+    padding: 1.5rem 1rem;
+  }
+}
